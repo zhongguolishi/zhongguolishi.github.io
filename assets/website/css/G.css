@@ -15,8 +15,11 @@
 
 .country-box {
     background: #f2f9ff;
+    padding: 1rem 0.5rem;
 }
 .country-box a {
     display: inline-block;
-    width: 7.5rem;
+    width: 12rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
