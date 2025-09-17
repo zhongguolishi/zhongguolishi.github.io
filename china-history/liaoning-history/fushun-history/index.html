@@ -240,40 +240,40 @@
         
             <div class="info">
                 <div>
-                    <h2>[8]&nbsp;<abbr title="think\exception\ErrorException">ErrorException</abbr> in <a class="toggle" title="/www/wwwroot/countrygitpages.wowkie.top/application/index/controller/Index.php line 299">Index.php line 299</a></h2>
+                    <h2>[8]&nbsp;<abbr title="think\exception\ErrorException">ErrorException</abbr> in <a class="toggle" title="/www/wwwroot/countrygitpages.wowkie.top/application/index/controller/Index.php line 301">Index.php line 301</a></h2>
                 </div>
                 <div><h1>未定义数组索引: detail</h1></div>
             </div>
         
     </div>
 	        <div class="source-code">
-            <pre class="prettyprint lang-php"><ol start="290"><li class="line-290"><code>        $items_model = Db::table('cgp_world_area_items')
-</code></li><li class="line-291"><code>            -&gt;field('id, title, detail as content')
-</code></li><li class="line-292"><code>            -&gt;where('website_id', $this-&gt;site_config['id'])
-</code></li><li class="line-293"><code>            -&gt;where('world_area_id', $model['id'])
-</code></li><li class="line-294"><code>            -&gt;where(&quot;IFNULL(title, '') &gt; ''&quot;)
-</code></li><li class="line-295"><code>            -&gt;find();
-</code></li><li class="line-296"><code>        if ($items_model)
-</code></li><li class="line-297"><code>        {
-</code></li><li class="line-298"><code>            $model['title'] = $items_model['title'];
-</code></li><li class="line-299"><code>            $model['content'] = $items_model['detail'];
-</code></li><li class="line-300"><code>        }
-</code></li><li class="line-301"><code>
-</code></li><li class="line-302"><code>        if ($this-&gt;site_config['lgc'] == 'en')
-</code></li><li class="line-303"><code>        {
-</code></li><li class="line-304"><code>            $model['name'] = $model['name_en'];
-</code></li><li class="line-305"><code>        }
-</code></li><li class="line-306"><code>        $this-&gt;canonical = 'https://' . $this-&gt;site_config['domain'] . $this-&gt;get_url_from_path($this-&gt;site_config['website_theme_url'], $model['path']);
-</code></li><li class="line-307"><code>
-</code></li><li class="line-308"><code>        //热门地区列表
+            <pre class="prettyprint lang-php"><ol start="292"><li class="line-292"><code>        $items_model = Db::table('cgp_world_area_items')
+</code></li><li class="line-293"><code>            -&gt;field('id, title, detail as content')
+</code></li><li class="line-294"><code>            -&gt;where('website_id', $this-&gt;site_config['id'])
+</code></li><li class="line-295"><code>            -&gt;where('world_area_id', $model['id'])
+</code></li><li class="line-296"><code>            -&gt;where(&quot;IFNULL(title, '') &gt; ''&quot;)
+</code></li><li class="line-297"><code>            -&gt;find();
+</code></li><li class="line-298"><code>        if ($items_model)
+</code></li><li class="line-299"><code>        {
+</code></li><li class="line-300"><code>            $model['title'] = $items_model['title'];
+</code></li><li class="line-301"><code>            $model['content'] = $items_model['detail'];
+</code></li><li class="line-302"><code>        }
+</code></li><li class="line-303"><code>
+</code></li><li class="line-304"><code>        if ($this-&gt;site_config['lgc'] == 'en')
+</code></li><li class="line-305"><code>        {
+</code></li><li class="line-306"><code>            $model['name'] = $model['name_en'];
+</code></li><li class="line-307"><code>        }
+</code></li><li class="line-308"><code>        $this-&gt;canonical = 'https://' . $this-&gt;site_config['domain'] . $this-&gt;get_url_from_path($this-&gt;site_config['website_theme_url'], $model['path']);
+</code></li><li class="line-309"><code>
+</code></li><li class="line-310"><code>        //热门地区列表
 </code></li></ol></pre>
         </div>
 	        <div class="trace">
             <h2>Call Stack</h2>
             <ol>
-                <li>in <a class="toggle" title="/www/wwwroot/countrygitpages.wowkie.top/application/index/controller/Index.php line 299">Index.php line 299</a></li>
+                <li>in <a class="toggle" title="/www/wwwroot/countrygitpages.wowkie.top/application/index/controller/Index.php line 301">Index.php line 301</a></li>
                                 <li>
-                at <abbr title="think\Error">Error</abbr>::appError() in <a class="toggle" title="/www/wwwroot/countrygitpages.wowkie.top/application/index/controller/Index.php line 299">Index.php line 299</a>                </li>
+                at <abbr title="think\Error">Error</abbr>::appError() in <a class="toggle" title="/www/wwwroot/countrygitpages.wowkie.top/application/index/controller/Index.php line 301">Index.php line 301</a>                </li>
                                 <li>
                 at <abbr title="app\index\controller\Index">Index</abbr>->city()                </li>
                                 <li>
@@ -390,7 +390,7 @@
                                 <div class="clearfix">
                     <div class="col-md-3"><strong>REMOTE_PORT</strong></div>
                     <div class="col-md-9"><small>
-                        55056                    </small></div>
+                        33078                    </small></div>
                 </div>
                                 <div class="clearfix">
                     <div class="col-md-3"><strong>REMOTE_ADDR</strong></div>
@@ -480,12 +480,12 @@
                                 <div class="clearfix">
                     <div class="col-md-3"><strong>REQUEST_TIME_FLOAT</strong></div>
                     <div class="col-md-9"><small>
-                        1757680420.831                    </small></div>
+                        1757940413.5464                    </small></div>
                 </div>
                                 <div class="clearfix">
                     <div class="col-md-3"><strong>REQUEST_TIME</strong></div>
                     <div class="col-md-9"><small>
-                        1757680420                    </small></div>
+                        1757940413                    </small></div>
                 </div>
                             </div>
                     </div>
@@ -511,7 +511,7 @@
                                 <div class="clearfix">
                     <div class="col-md-3"><strong>THINK_START_TIME</strong></div>
                     <div class="col-md-9"><small>
-                        1757680420.8314                    </small></div>
+                        1757940413.5473                    </small></div>
                 </div>
                                 <div class="clearfix">
                     <div class="col-md-3"><strong>THINK_START_MEM</strong></div>
@@ -633,7 +633,7 @@
         <span>{ 十年磨一剑-为API开发设计的高性能框架 }</span>
     </div>
         <script>
-        var LINE = 299;
+        var LINE = 301;
 
         function $(selector, node){
             var elements;
